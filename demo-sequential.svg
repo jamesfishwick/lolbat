@@ -4,7 +4,7 @@
 <desc>Source file</desc>
 <defs><style type="text/css">
 <![CDATA[
-rect { fill:#ffffff; } 
+rect { fill:#282a36; } 
 g { font-size: 14; font-family: JetBrains Mono,Fira Code,monospace; white-space: pre; }
 ]]>
 </style></defs><g>

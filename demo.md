@@ -1,13 +1,11 @@
 # lolbat: Dracula-themed terminal colorizer
 
-*2026-02-26T04:10:29Z by Showboat 0.6.1*
-<!-- showboat-id: e48345be-dd0f-4c45-a5b0-463d70f29cf3 -->
+*2026-02-26T04:13:37Z by Showboat 0.6.1*
+<!-- showboat-id: d07e99da-6e91-4d16-9130-16e2950b2c3d -->
 
-lolbat colorizes terminal output using the Dracula color palette. It reads from stdin or files and supports three coloring modes: sequential, sine, and random. It is API-compatible with lolcat flags.
+lolbat colorizes terminal output using the Dracula color palette. It reads from stdin or files and supports three coloring modes: sequential, sine, and random. Flags are compatible with lolcat.
 
 ## Install
-
-Install directly from source using the Go toolchain:
 
 ```bash
 go install github.com/jamesfishwick/lolbat@latest && echo 'installed'
@@ -17,39 +15,47 @@ go install github.com/jamesfishwick/lolbat@latest && echo 'installed'
 installed
 ```
 
-## Sequential mode (default)
+## Flags
 
-Each character advances through the Dracula palette. The `--spread` flag controls how many characters share a color before stepping to the next (default: 3).
-
-```bash {image}
-![Sequential mode — each character cycles through the Dracula palette](demo-sequential.svg)
+```
+-mode string    Coloring mode: sequential, sine, random (default: sequential)
+-freq float     Color wave frequency, sine mode only (default: 0.3)
+-spread float   Characters per color step (default: 3)
+-seed int       Starting palette offset (default: 0)
+-a              Animate colors (loops until Ctrl-C)
 ```
 
-![Sequential mode — each character cycles through the Dracula palette](390f343f-2026-02-26.svg)
+## Sequential mode (default)
+
+Each character advances through the Dracula palette. `-spread` controls how many characters share a color before stepping to the next.
+
+```bash {image}
+![Sequential mode: -spread 1.0](demo-sequential.svg)
+```
+
+![Sequential mode: -spread 1.0](cb277cc9-2026-02-26.svg)
 
 ## Sine mode
 
-The palette index oscillates along a sine wave. `--freq` controls wave frequency, `--spread` controls horizontal compression. The result is a smooth, undulating gradient across each line.
+The palette index oscillates along a sine wave. `-freq` controls wave frequency; `-spread` controls horizontal compression.
 
 ```bash {image}
-![Sine mode — smooth sine-wave color gradient across pangrams](demo-sine.svg)
+![Sine mode: -mode sine -freq 0.5 -spread 2.0](demo-sine.svg)
 ```
 
-![Sine mode — smooth sine-wave color gradient across pangrams](b1c970c3-2026-02-26.svg)
+![Sine mode: -mode sine -freq 0.5 -spread 2.0](b1f3d5d1-2026-02-26.svg)
 
 ## Random mode
 
-Each line gets a single color chosen by a seeded PRNG, keyed on `--seed + line number`. Output is deterministic — the same input always produces the same colors.
+Each line gets one color, chosen by a seeded PRNG keyed on `-seed + line number`. Output is fully deterministic.
 
 ```bash {image}
-![Random mode — each line gets one deterministic Dracula color](demo-random.svg)
+![Random mode: -mode random](demo-random.svg)
 ```
 
-![Random mode — each line gets one deterministic Dracula color](0e01ba0e-2026-02-26.svg)
+![Random mode: -mode random](34570275-2026-02-26.svg)
 
 ## Test suite
-
-7 unit tests covering palette length, index wrapping, negative seed safety, ANSI escape formatting, and all three colorizer modes.
 
 ```bash
 go test ./... -v
@@ -77,4 +83,4 @@ ok  	github.com/jamesfishwick/lolbat	(cached)
 ## Source
 
 - GitHub: https://github.com/jamesfishwick/lolbat
-- Written in Go 1.21+, stdlib only — no external dependencies.
+- Go 1.21+, stdlib only — no external dependencies.

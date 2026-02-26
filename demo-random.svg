@@ -4,13 +4,13 @@
 <desc>Source file</desc>
 <defs><style type="text/css">
 <![CDATA[
-rect { fill:#ffffff; } 
+rect { fill:#282a36; } 
 g { font-size: 14; font-family: JetBrains Mono,Fira Code,monospace; white-space: pre; }
 ]]>
 </style></defs><g>
 <rect x="0" y="0" width="100%" height="100%"/>
 <text x="10" y="28"></text>
-<text x="10" y="28"><tspan style="fill:#ff79c6;">line&#160;one</tspan>
+<text x="10" y="28"><tspan style="fill:#ff79c6;">ok&#160;printf&#160;line&#160;one</tspan>
 </text>
 <text x="10" y="56"><tspan style="fill:#69ff94;">line&#160;two</tspan>
 </text>
@@ -19,6 +19,8 @@ g { font-size: 14; font-family: JetBrains Mono,Fira Code,monospace; white-space:
 <text x="10" y="112"><tspan style="fill:#ffffa5;">line&#160;four</tspan>
 </text>
 <text x="10" y="140"><tspan style="fill:#ff5555;">line&#160;five</tspan>
+</text>
+<text x="10" y="168"><tspan style="fill:#ff92df;"></tspan>
 </text>
 </g>
 </svg>
