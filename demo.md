@@ -84,3 +84,43 @@ ok  	github.com/jamesfishwick/lolbat	(cached)
 
 - GitHub: https://github.com/jamesfishwick/lolbat
 - Go 1.21+, stdlib only — no external dependencies.
+
+## Mode comparison
+
+Same text run through all three modes. Sequential cycles smoothly, sine oscillates, random picks one color per line.
+
+```bash {image}
+![Mode comparison: sequential / sine / random](demo-modes.svg)
+```
+
+![Mode comparison: sequential / sine / random](c9c084e5-2026-02-26.svg)
+
+## Spread comparison
+
+`-spread 1` changes color every character. `-spread 3` (default) groups ~3 chars per color. `-spread 6` produces broader bands.
+
+```bash {image}
+![Spread comparison: -spread 1 / 3 / 6](demo-spread.svg)
+```
+
+![Spread comparison: -spread 1 / 3 / 6](fae635e2-2026-02-26.svg)
+
+## Seed variations
+
+`-seed` shifts the starting position in the palette. Each value produces a different color entry point across the same text.
+
+```bash {image}
+![Seed variations: -seed 0 / 3 / 7 / 10](demo-seed.svg)
+```
+
+![Seed variations: -seed 0 / 3 / 7 / 10](3d619fb5-2026-02-26.svg)
+
+## Freq comparison (sine mode)
+
+Higher `-freq` compresses the sine wave, cycling through the palette faster. Lower values produce longer, lazier gradients.
+
+```bash {image}
+![Freq comparison: -mode sine -freq 0.1 / 0.3 / 0.6 / 1.0](demo-freq.svg)
+```
+
+![Freq comparison: -mode sine -freq 0.1 / 0.3 / 0.6 / 1.0](ebf3278d-2026-02-26.svg)
