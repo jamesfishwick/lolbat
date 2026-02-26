@@ -2,7 +2,7 @@
 
 Colorize terminal output using the [Dracula](https://draculatheme.com) color palette.
 
-A lolcat-compatible CLI tool with three coloring modes.
+A lolcat-compatible CLI tool with three coloring modes. See the [demo](demo.md) for visuals.
 
 ## Usage
 

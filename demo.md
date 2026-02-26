@@ -33,11 +33,7 @@ Each character advances through the Dracula palette. `-spread` controls how many
 printf "Painful zombies quickly watch a jinxed graveyard.\n..." | lolbat -spread 1.0
 ```
 
-```bash {image}
-\![Sequential mode: -spread 1.0](demo-sequential.svg)
-```
-
-![Sequential mode: -spread 1.0](f2acbd18-2026-02-26.svg)
+![Sequential mode: -spread 1.0](docs/images/demo-sequential.svg)
 
 ## Sine mode
 
@@ -47,11 +43,7 @@ The palette index oscillates along a sine wave. `-freq` controls wave frequency;
 printf "Painful zombies quickly watch a jinxed graveyard.\n..." | lolbat -mode sine -freq 0.5 -spread 2.0
 ```
 
-```bash {image}
-\![Sine mode: -mode sine -freq 0.5 -spread 2.0](demo-sine.svg)
-```
-
-![Sine mode: -mode sine -freq 0.5 -spread 2.0](13b61472-2026-02-26.svg)
+![Sine mode: -mode sine -freq 0.5 -spread 2.0](docs/images/demo-sine.svg)
 
 ## Random mode
 
@@ -61,11 +53,7 @@ Each line gets one color, chosen by a seeded PRNG keyed on `-seed + line number`
 printf "Painful zombies quickly watch a jinxed graveyard.\n..." | lolbat -mode random
 ```
 
-```bash {image}
-\![Random mode: -mode random](demo-random.svg)
-```
-
-![Random mode: -mode random](79524458-2026-02-26.svg)
+![Random mode: -mode random](docs/images/demo-random.svg)
 
 ## Mode comparison
 
@@ -77,11 +65,7 @@ printf "..." | lolbat -mode sine -spread 2.0
 printf "..." | lolbat -mode random
 ```
 
-```bash {image}
-\![Mode comparison: sequential / sine / random](demo-modes.svg)
-```
-
-![Mode comparison: sequential / sine / random](9dcf0234-2026-02-26.svg)
+![Mode comparison: sequential / sine / random](docs/images/demo-modes.svg)
 
 ## Spread comparison
 
@@ -93,11 +77,7 @@ printf "..." | lolbat -spread 3.0
 printf "..." | lolbat -spread 6.0
 ```
 
-```bash {image}
-\![Spread comparison: -spread 1 / 3 / 6](demo-spread.svg)
-```
-
-![Spread comparison: -spread 1 / 3 / 6](5ebdd4c0-2026-02-26.svg)
+![Spread comparison: -spread 1 / 3 / 6](docs/images/demo-spread.svg)
 
 ## Seed variations
 
@@ -110,11 +90,7 @@ printf "..." | lolbat -seed 7 -spread 2.0
 printf "..." | lolbat -seed 10 -spread 2.0
 ```
 
-```bash {image}
-\![Seed variations: -seed 0 / 3 / 7 / 10](demo-seed.svg)
-```
-
-![Seed variations: -seed 0 / 3 / 7 / 10](6b00f5f5-2026-02-26.svg)
+![Seed variations: -seed 0 / 3 / 7 / 10](docs/images/demo-seed.svg)
 
 ## Freq comparison (sine mode)
 
@@ -127,11 +103,7 @@ printf "..." | lolbat -mode sine -freq 0.6 -spread 2.0
 printf "..." | lolbat -mode sine -freq 1.0 -spread 2.0
 ```
 
-```bash {image}
-\![Freq comparison: -mode sine -freq 0.1 / 0.3 / 0.6 / 1.0](demo-freq.svg)
-```
-
-![Freq comparison: -mode sine -freq 0.1 / 0.3 / 0.6 / 1.0](74c6d2dc-2026-02-26.svg)
+![Freq comparison: -mode sine -freq 0.1 / 0.3 / 0.6 / 1.0](docs/images/demo-freq.svg)
 
 ## Test suite
 
@@ -155,10 +127,10 @@ go test ./... -v
 === RUN   TestANSI
 --- PASS: TestANSI (0.00s)
 PASS
-ok  	github.com/jamesfishwick/lolbat	(cached)
+ok   github.com/jamesfishwick/lolbat (cached)
 ```
 
 ## Source
 
-- GitHub: https://github.com/jamesfishwick/lolbat
+- GitHub: <https://github.com/jamesfishwick/lolbat>
 - Go 1.21+, stdlib only — no external dependencies.
