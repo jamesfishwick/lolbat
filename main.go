@@ -9,8 +9,6 @@ import (
 	"time"
 )
 
-var version = "dev"
-
 func main() {
 	mode := flag.String("mode", "sequential", "Coloring mode: sequential, sine, random")
 	freq := flag.Float64("freq", 0.3, "Color wave frequency (sine mode)")
@@ -39,7 +37,10 @@ func main() {
 				os.Exit(1)
 			}
 			lines = append(lines, readLines(f)...)
-			f.Close()
+			if err := f.Close(); err != nil {
+				fmt.Fprintf(os.Stderr, "lolbat: %v\n", err)
+				os.Exit(1)
+			}
 		}
 	}
 
