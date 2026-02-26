@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.2//EN" "http://www.w3.org/Graphics/SVG/1.2/DTD/svg12.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="full" xml:space="preserve">
+<desc>Source file</desc>
+<defs><style type="text/css">
+<![CDATA[
+rect { fill:#ffffff; } 
+g { font-size: 14; font-family: JetBrains Mono,Fira Code,monospace; white-space: pre; }
+]]>
+</style></defs><g>
+<rect x="0" y="0" width="100%" height="100%"/>
+<text x="10" y="28"></text>
+<text x="10" y="28"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">R</tspan><tspan style="fill:#d6acff;">e</tspan><tspan style="fill:#6272a4;">d</tspan>
+</text>
+<text x="10" y="56"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">B</tspan><tspan style="fill:#d6acff;">r</tspan><tspan style="fill:#6272a4;">i</tspan><tspan style="fill:#8be9fd;">g</tspan><tspan style="fill:#a4ffff;">h</tspan><tspan style="fill:#50fa7b;">t</tspan><tspan style="fill:#69ff94;">R</tspan><tspan style="fill:#f1fa8c;">e</tspan><tspan style="fill:#ffffa5;">d</tspan>
+</text>
+<text x="10" y="84"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">M</tspan><tspan style="fill:#d6acff;">a</tspan><tspan style="fill:#6272a4;">g</tspan><tspan style="fill:#8be9fd;">e</tspan><tspan style="fill:#a4ffff;">n</tspan><tspan style="fill:#50fa7b;">t</tspan><tspan style="fill:#69ff94;">a</tspan>
+</text>
+<text x="10" y="112"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">B</tspan><tspan style="fill:#d6acff;">r</tspan><tspan style="fill:#6272a4;">i</tspan><tspan style="fill:#8be9fd;">g</tspan><tspan style="fill:#a4ffff;">h</tspan><tspan style="fill:#50fa7b;">t</tspan><tspan style="fill:#69ff94;">M</tspan><tspan style="fill:#f1fa8c;">a</tspan><tspan style="fill:#ffffa5;">g</tspan><tspan style="fill:#ff5555;">e</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">t</tspan><tspan style="fill:#ff92df;">a</tspan>
+</text>
+<text x="10" y="140"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">B</tspan><tspan style="fill:#d6acff;">l</tspan><tspan style="fill:#6272a4;">u</tspan><tspan style="fill:#8be9fd;">e</tspan>
+</text>
+<text x="10" y="168"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">B</tspan><tspan style="fill:#d6acff;">r</tspan><tspan style="fill:#6272a4;">i</tspan><tspan style="fill:#8be9fd;">g</tspan><tspan style="fill:#a4ffff;">h</tspan><tspan style="fill:#50fa7b;">t</tspan><tspan style="fill:#69ff94;">B</tspan><tspan style="fill:#f1fa8c;">l</tspan><tspan style="fill:#ffffa5;">u</tspan><tspan style="fill:#ff5555;">e</tspan>
+</text>
+<text x="10" y="196"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">B</tspan><tspan style="fill:#d6acff;">r</tspan><tspan style="fill:#6272a4;">i</tspan><tspan style="fill:#8be9fd;">g</tspan><tspan style="fill:#a4ffff;">h</tspan><tspan style="fill:#50fa7b;">t</tspan><tspan style="fill:#69ff94;">B</tspan><tspan style="fill:#f1fa8c;">l</tspan><tspan style="fill:#ffffa5;">a</tspan><tspan style="fill:#ff5555;">c</tspan><tspan style="fill:#ff6e6e;">k</tspan>
+</text>
+<text x="10" y="224"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">C</tspan><tspan style="fill:#d6acff;">y</tspan><tspan style="fill:#6272a4;">a</tspan><tspan style="fill:#8be9fd;">n</tspan>
+</text>
+<text x="10" y="252"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">B</tspan><tspan style="fill:#d6acff;">r</tspan><tspan style="fill:#6272a4;">i</tspan><tspan style="fill:#8be9fd;">g</tspan><tspan style="fill:#a4ffff;">h</tspan><tspan style="fill:#50fa7b;">t</tspan><tspan style="fill:#69ff94;">C</tspan><tspan style="fill:#f1fa8c;">y</tspan><tspan style="fill:#ffffa5;">a</tspan><tspan style="fill:#ff5555;">n</tspan>
+</text>
+<text x="10" y="280"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">G</tspan><tspan style="fill:#d6acff;">r</tspan><tspan style="fill:#6272a4;">e</tspan><tspan style="fill:#8be9fd;">e</tspan><tspan style="fill:#a4ffff;">n</tspan>
+</text>
+<text x="10" y="308"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">B</tspan><tspan style="fill:#d6acff;">r</tspan><tspan style="fill:#6272a4;">i</tspan><tspan style="fill:#8be9fd;">g</tspan><tspan style="fill:#a4ffff;">h</tspan><tspan style="fill:#50fa7b;">t</tspan><tspan style="fill:#69ff94;">G</tspan><tspan style="fill:#f1fa8c;">r</tspan><tspan style="fill:#ffffa5;">e</tspan><tspan style="fill:#ff5555;">e</tspan><tspan style="fill:#ff6e6e;">n</tspan>
+</text>
+<text x="10" y="336"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">Y</tspan><tspan style="fill:#d6acff;">e</tspan><tspan style="fill:#6272a4;">l</tspan><tspan style="fill:#8be9fd;">l</tspan><tspan style="fill:#a4ffff;">o</tspan><tspan style="fill:#50fa7b;">w</tspan>
+</text>
+<text x="10" y="364"><tspan style="fill:#ff5555;">A</tspan><tspan style="fill:#ff6e6e;">n</tspan><tspan style="fill:#ff79c6;">s</tspan><tspan style="fill:#ff92df;">i</tspan><tspan style="fill:#bd93f9;">B</tspan><tspan style="fill:#d6acff;">r</tspan><tspan style="fill:#6272a4;">i</tspan><tspan style="fill:#8be9fd;">g</tspan><tspan style="fill:#a4ffff;">h</tspan><tspan style="fill:#50fa7b;">t</tspan><tspan style="fill:#69ff94;">Y</tspan><tspan style="fill:#f1fa8c;">e</tspan><tspan style="fill:#ffffa5;">l</tspan><tspan style="fill:#ff5555;">l</tspan><tspan style="fill:#ff6e6e;">o</tspan><tspan style="fill:#ff79c6;">w</tspan>
+</text>
+</g>
+</svg>
+<!-- SVG generated by ansifilter 2.22, http://andre-simon.de/ -->
