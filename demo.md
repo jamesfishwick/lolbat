@@ -105,6 +105,16 @@ printf "..." | lolbat -mode sine -freq 1.0 -spread 2.0
 
 ![Freq comparison: -mode sine -freq 0.1 / 0.3 / 0.6 / 1.0](docs/images/demo-freq.svg)
 
+## Animate mode
+
+`-a` loops the output continuously, cycling colors on each pass. Interrupt with Ctrl-C.
+
+```bash
+printf "Painful zombies quickly watch a jinxed graveyard.\n..." | lolbat -a
+```
+
+![Animate mode: -a flag](docs/images/demo-animate.gif)
+
 ## Test suite
 
 ```bash
