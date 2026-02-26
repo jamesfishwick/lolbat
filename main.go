@@ -9,6 +9,8 @@ import (
 	"time"
 )
 
+var version = "dev"
+
 func main() {
 	mode := flag.String("mode", "sequential", "Coloring mode: sequential, sine, random")
 	freq := flag.Float64("freq", 0.3, "Color wave frequency (sine mode)")
@@ -25,7 +27,6 @@ func main() {
 		Animate: *animate,
 	}
 
-	// Collect all lines from stdin or files
 	var lines []string
 	args := flag.Args()
 	if len(args) == 0 {

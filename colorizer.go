@@ -6,7 +6,6 @@ import (
 	"math/rand"
 )
 
-// Options holds the colorizer configuration parsed from CLI flags.
 type Options struct {
 	Mode    string
 	Freq    float64
@@ -15,8 +14,6 @@ type Options struct {
 	Animate bool
 }
 
-// ColorizeLine colorizes a single line of text according to the options.
-// lineIndex is the line number (0-based), used for sine mode vertical offset.
 func ColorizeLine(line string, lineIndex int, opts Options) string {
 	switch opts.Mode {
 	case "sine":
@@ -41,8 +38,10 @@ func colorizeLineSine(line string, lineIndex int, opts Options) string {
 	out := ""
 	n := float64(len(Palette))
 	for i, ch := range line {
+		// Freq shifts pos vertically per line AND controls wave tightness in sin().
+		// Both uses are intentional: one parameter drives horizontal and vertical rhythm together.
 		pos := float64(opts.Seed+i)/opts.Spread + float64(lineIndex)*opts.Freq
-		// Map sine output (-1..1) to palette index (0..n-1)
+		// Normalize sin(-1..1) → 0..n-1
 		idx := int((math.Sin(pos*opts.Freq*2*math.Pi)+1)/2*(n-1)+0.5) % len(Palette)
 		out += ColorAt(idx).ANSI() + string(ch)
 	}
@@ -50,6 +49,7 @@ func colorizeLineSine(line string, lineIndex int, opts Options) string {
 }
 
 func colorizeLineRandom(line string, lineIndex int, opts Options) string {
+	// One color per line (not per character); seeded so animation frames stay stable.
 	r := rand.New(rand.NewSource(int64(opts.Seed + lineIndex)))
 	color := ColorAt(r.Intn(len(Palette)))
 	return color.ANSI() + line + Reset

@@ -3,12 +3,10 @@ package main
 
 import "fmt"
 
-// Color holds an RGB triple.
 type Color struct {
 	R, G, B uint8
 }
 
-// ANSI returns the ANSI true-color foreground escape sequence for the color.
 func (c Color) ANSI() string {
 	return fmt.Sprintf("\033[38;2;%d;%d;%dm", c.R, c.G, c.B)
 }
@@ -17,7 +15,6 @@ func (c Color) ANSI() string {
 const Reset = "\033[0m"
 
 // Palette is the Dracula ANSI color palette (excluding black and white).
-// Order: warm (reds/pinks) -> cool (purples/blues) -> muted -> cyans -> greens -> yellows
 var Palette = []Color{
 	{255, 85, 85},   // AnsiRed           #FF5555
 	{255, 110, 110}, // AnsiBrightRed     #FF6E6E
@@ -34,8 +31,7 @@ var Palette = []Color{
 	{255, 255, 165}, // AnsiBrightYellow  #FFFFA5
 }
 
-// ColorAt returns the palette color at the given index, wrapping around.
-// Handles negative indices safely.
+// Wraps with correct modulo for negative indices.
 func ColorAt(i int) Color {
 	n := len(Palette)
 	return Palette[((i%n)+n)%n]

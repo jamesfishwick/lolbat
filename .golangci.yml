@@ -1,0 +1,16 @@
+version: "2"
+
+linters:
+  enable:
+    - govet # suspicious constructs
+    - staticcheck # broad static analysis
+    - errcheck # unchecked errors
+    - gosimple # simplification suggestions
+    - unused # unused code
+    - gofmt # formatting
+    - goimports # import ordering
+    - misspell # typos in comments/strings
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
