@@ -1,6 +1,6 @@
 # lolbat
 
-![alt text](docs/images/roflmao.png)
+![lolbat - a bat that poops rainbows](docs/images/roflmao.png)
 
 Colorize terminal output using the [Dracula](https://draculatheme.com) color palette.
 
